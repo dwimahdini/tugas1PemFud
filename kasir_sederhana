@@ -1,0 +1,74 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package com.dwimahdini.program;
+
+/**
+ *
+ * @author ACER
+ */
+import java.util.Scanner;
+public class Program_KasirSedehana {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // Membuat program menghitung barang sederhana
+        Scanner input = new Scanner(System.in);
+        
+        int harga =0;
+        int total;
+        int sabun, shampoo, Sikatgigi,pembayaran1;
+        sabun = 5000;
+        shampoo = 7000;
+        Sikatgigi = 13000;
+        pembayaran1 = 0;
+       
+        System.out.println("Nama Kasir : Dwi Mahdini\n");
+        System.out.println("----- DAFTAR HARGA BARANG -----");
+        System.out.println("1. Sabun        | Rp 5000,-      ");
+        System.out.println("2. Shampoo      | Rp 7000,-      ");
+        System.out.println("3. Sikat Gigi   | Rp 13000,-      ");
+        
+        System.out.println("================================================");
+        
+        System.out.print("Masukkan Jumlah Sabun : ");
+        int jumlah = input.nextInt();
+        sabun = sabun*jumlah;
+        System.out.println("Total = " +sabun);
+       
+        System.out.print("Masukkan Jumlah Shampoo : ");
+        int jumlah2 = input.nextInt();
+        shampoo = shampoo*jumlah2;
+        System.out.println("Total = " +shampoo);
+       
+        System.out.print("Masukkan Jumlah Sikat Gigi : ");
+        int jumlah3 = input.nextInt();
+        Sikatgigi = Sikatgigi*jumlah3;
+        System.out.println("Total = Rp " +Sikatgigi);
+        
+        System.out.println("_________________________________________________\n");
+        
+        
+        int belanja = sabun+shampoo+Sikatgigi;
+        System.out.println("Total Belanja Anda = Rp " +belanja ); 
+        
+        System.out.print("Pembayaran = ");
+        int jumlah4 = input.nextInt();
+        pembayaran1 = belanja-jumlah4;
+        System.out.println("Kembalian Anda = " +pembayaran1+ "\n");
+        
+        
+        System.out.println("=================================================");              
+        System.out.println("========= SEMOGA HARI ANDA MENYENANGKAN =========");
+        System.out.println("======= SENANG BISA MELAYANI ANDA KEMBALI =======");
+        System.out.println("============== -ARIFIN MINIMARKET- ==============");
+        System.out.println("=================================================");
+        
+    }
+    
+}
